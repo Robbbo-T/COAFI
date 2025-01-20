@@ -1,4 +1,4 @@
-**GPPM-QPROP-0401-02-001: Quantum State Modulator (QSM) Specifications*** [GPPM-QPROP-0401-02-001: Quantum State Modulator (QSM) Specifications](#gppm-qprop-0401-02-001-quantum-state-modulator-qsm-specifications)
+ [GPPM-QPROP-0401-02-001: Quantum State Modulator (QSM) Specifications](#gppm-qprop-0401-02-001-quantum-state-modulator-qsm-specifications)
 
 **(Changes and additions will be highlighted in bold)**
 
