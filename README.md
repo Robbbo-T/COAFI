@@ -1175,7 +1175,7 @@ By meticulously maintaining this list, you will promote clarity, avoid confusion
         *   **IN:** GPPM-QPROP-0401-01-002 - Principles of Operation and Theoretical Basis
         *   **IN:** GPPM-QPROP-0401-01-003 - Integration of Q-01 with AEHCS
     *   **4.1.2 Q-01 System Architecture and Components:**
-        *   **IN:** GPPM-QPROP-0401-02-001 - Quantum State Modulator (QSM) Specifications
+        *   **IN:** GPPM-QPROP-0401-02-001 - Quantum State Modulator (QSM) Specifications * [GPPM-QPROP-0401-02-001: Quantum State Modulator (QSM) Specifications](#gppm-qprop-0401-02-001-quantum-state-modulator-qsm-specifications)
         *   **IN:** GPPM-QPROP-0401-02-002 - Quantum Entanglement Engine (QEE) Design
         *   **IN:** GPPM-QPROP-0401-02-003 - Cryogenic Cooling System for Q-01
         *   **IN:** GPPM-QPROP-0401-02-004 - Energy Transfer Mechanisms
