@@ -52,7 +52,127 @@
 
 ## 📊 Visual Architecture Diagram
 
-![GAIA AIR Architecture Diagram](gaia_air_architecture.png)
+```mermaid
+flowchart TD
+    %% Define styles
+    classDef uiLayer fill:#3498db,color:#fff,stroke:#2980b9
+    classDef appLayer fill:#2ecc71,color:#fff,stroke:#27ae60
+    classDef aiLayer fill:#9b59b6,color:#fff,stroke:#8e44ad
+    classDef dataIntLayer fill:#e74c3c,color:#fff,stroke:#c0392b
+    classDef dataSourceLayer fill:#f39c12,color:#fff,stroke:#d35400
+    classDef secLayer fill:#1abc9c,color:#fff,stroke:#16a085
+
+    %% User Interface Layer
+    subgraph UI_Layer["User Interface Layer"]
+        UI["Web/Desktop Interface"]
+        VIS["3D Visualization"]
+        COLLAB["Collaboration Tools"]
+        DASH["Analytics Dashboard"]
+    end
+    
+    %% Application Layer
+    subgraph APP_Layer["Application Layer"]
+        DES["Design & Simulation"]
+        MFG["Manufacturing"]
+        MRO["Maintenance & Overhaul"]
+        REG["Regulatory Compliance"]
+        KM["Knowledge Management"]
+    end
+    
+    %% AI Services Layer
+    subgraph AI_Layer["AI Services Layer"]
+        GEN["Generative Design"]
+        SIM["AI Simulation"]
+        PRED["Predictive Analytics"]
+        NLP["NLP & Doc Processing"]
+        CV["Computer Vision"]
+        KG["Knowledge Graph"]
+        RL["Reinforcement Learning"]
+    end
+    
+    %% Data Integration Layer
+    subgraph Data_Int_Layer["Data Integration Layer"]
+        API["API Gateway"]
+        ETL["ETL Pipelines"]
+        STREAM["Data Streaming"]
+        CACHE["Distributed Cache"]
+    end
+    
+    %% Data Sources Layer
+    subgraph Data_Sources["Data Sources"]
+        CAD["CAD/CAM Systems"]
+        PLM["PLM Systems"]
+        ERP["ERP Systems"]
+        IOT["IoT & Sensor Data"]
+        DOC["Document Repositories"]
+        REG_DB["Regulatory DBs"]
+        DB["Relational DB"]
+        NO_SQL["NoSQL DB"]
+        DW["Data Warehouse"]
+    end
+    
+    %% Security & Governance Layer
+    subgraph Security_Gov["Security & Governance"]
+        AUTH["Authentication"]
+        AUDIT["Audit & Compliance"]
+        ENCRYPT["Encryption"]
+        POLICY["Policy Management"]
+    end
+    
+    %% User Interface Dependencies
+    UI --> DES
+    UI --> MFG
+    UI <--> DASH
+    VIS --> DES
+    VIS --> MRO
+    COLLAB --> KM
+    
+    %% Application Layer Dependencies
+    DES <--> GEN
+    DES --> SIM
+    DES --> DB
+    MFG --> DB
+    MRO --> DB
+    REG --> REG_DB
+    KM --> DOC
+    
+    %% AI Services Layer Dependencies
+    GEN --> KG
+    SIM --> PRED
+    PRED --> KG
+    PRED --> DW
+    RL --> SIM
+    NLP --> KG
+    CV --> IOT
+    
+    %% Data Integration Layer Dependencies
+    API <--> DES
+    API <--> MFG
+    API <--> MRO
+    API <--> KM
+    ETL --> CAD
+    ETL --> PLM
+    ETL --> ERP
+    ETL --> DB
+    STREAM --> IOT
+    CACHE --> DB
+    
+    %% Security & Governance Dependencies
+    AUTH --> UI
+    AUTH --> API
+    AUDIT --> DB
+    ENCRYPT --> API
+    ENCRYPT --> DB
+    POLICY --> AUTH
+    
+    %% Apply styles
+    class UI,VIS,COLLAB,DASH uiLayer
+    class DES,MFG,MRO,REG,KM appLayer
+    class GEN,SIM,PRED,NLP,CV,KG,RL aiLayer
+    class API,ETL,STREAM,CACHE dataIntLayer
+    class CAD,PLM,ERP,IOT,DOC,REG_DB,DB,NO_SQL,DW dataSourceLayer
+    class AUTH,AUDIT,ENCRYPT,POLICY secLayer
+```
 
 ---
 
