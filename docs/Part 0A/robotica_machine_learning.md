@@ -1,4 +1,4 @@
-###  **Part 0/: Heuritmática (GP-HEUR)**  
+###  **Part 0A: Heuritmática (GP-HEUR)**  
 #### **Definición General**
 La **Heuritmática (GP-HEUR)** es la capa fundacional del sistema GAIA AIR para la **toma de decisiones autónoma y adaptativa** basada en una integración matemática entre:
 
