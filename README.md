@@ -1,11 +1,8 @@
 
 ---
 title: "GAIA AIR Master Index"
-author: "COAFI Documentation Team"
-date: "2024-12-07"
-status: "Draft"
-doc_code: "GP-OV-GAI-0001-A"
-nav_order: 1
+author: "AMEDEO PELLICCIA"
+
 nav_title: "Master Index"
 ---
 
